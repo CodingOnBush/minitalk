@@ -6,7 +6,7 @@
 #    By: momrane <momrane@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/07 15:20:43 by momrane           #+#    #+#              #
-#    Updated: 2024/01/10 17:39:49 by momrane          ###   ########.fr        #
+#    Updated: 2024/01/10 18:14:30 by momrane          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,7 @@ SERVERDIR =		$(SRCDIR)/server
 
 SERVER =		server
 CLIENT =		client
-B_CLIENT =		client_bonus
+B_CLIENT =		client
 NAME = 			$(SERVER) $(CLIENT)
 
 PRINTF =		./lib/ft_printf/libftprintf.a
