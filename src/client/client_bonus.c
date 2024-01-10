@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   usr.c                                           :+:      :+:    :+:   */
+/*   client_bonus.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: momrane <momrane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/04 19:27:49 by momrane           #+#    #+#             */
-/*   Updated: 2024/01/09 10:02:03 by momrane          ###   ########.fr       */
+/*   Created: 2024/01/10 17:25:03 by momrane           #+#    #+#             */
+/*   Updated: 2024/01/10 17:43:51 by momrane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,15 @@ int			g_bit_count;
 
 static void	ft_handle_signal(int signum)
 {
-	(void)signum;
+	if (signum == SIGUSR1)
+		ft_printf("⬜");
+	else if (signum == SIGUSR2)
+		ft_printf("🌀");
+	else
+	{
+		ft_printf("[Client : Stop sending]\n");
+		exit(0);
+	}
 }
 
 static void	ft_send_char(pid_t pid, char c)
