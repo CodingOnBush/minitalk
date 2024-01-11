@@ -6,7 +6,7 @@
 /*   By: momrane <momrane@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/10 17:25:03 by momrane           #+#    #+#             */
-/*   Updated: 2024/01/10 18:11:45 by momrane          ###   ########.fr       */
+/*   Updated: 2024/01/11 10:54:02 by momrane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ static void	ft_send_msg(pid_t pid, char *msg)
 		msg++;
 	}
 	ft_send_char(pid, '\0');
-	ft_printf("\n[usr : Message sent ✅]\n");
+	ft_printf("\n[Client : Message sent ✅]\n");
 }
 
 int	main(int argc, char **argv)
