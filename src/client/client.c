@@ -1,14 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   usr.c                                           :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: momrane <momrane@student.42.fr>            +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/04 19:27:49 by momrane           #+#    #+#             */
-/*   Updated: 2024/01/09 10:02:03 by momrane          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
 
 #include "../../inc/ft_minitalk.h"
 
@@ -48,7 +37,7 @@ static void	ft_send_msg(pid_t pid, char *msg)
 		msg++;
 	}
 	ft_send_char(pid, '\0');
-	ft_printf("\n[usr : Message sent ✅]\n");
+	ft_printf("\n[Client : Message sent ✅]\n");
 }
 
 int	main(int argc, char **argv)
